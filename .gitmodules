@@ -1,0 +1,3 @@
+[submodule "salon-react"]
+	path = salon-react
+	url = https://github.com/michmichyh/front-salon.git
