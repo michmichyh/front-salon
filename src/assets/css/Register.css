@@ -1,0 +1,84 @@
+/* Register.css */
+
+.register-container {
+  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 50px auto; /* Incrementa el margen superior para centrar más el formulario */
+  padding: 30px; /* Reduce el padding para hacerlo más compacto */
+  border-radius: 12px; /* Aumenta el radio de borde para esquinas más redondeadas */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo con opacidad */
+  background-image: radial-gradient(circle, #82cbff, #dd74f5); /* Gradiente de colores */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Incrementa el margen inferior del título */
+  color: #000000; /* Color de texto negro */
+  font-size: 24px; /* Aumenta el tamaño de fuente del título */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Incrementa el margen inferior entre grupos */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px; /* Incrementa el margen inferior de las etiquetas */
+  color: #333; /* Color de texto gris oscuro */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px; /* Reduce el relleno para campos más compactos */
+  font-size: 16px; /* Aumenta el tamaño de fuente de los campos */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Aumenta el radio de borde de los campos */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo del input con opacidad */
+  color: #333; /* Color de texto gris oscuro */
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #5a3dd6;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px; /* Reduce el relleno para el botón más compacto */
+  font-size: 16px; /* Aumenta el tamaño de fuente del botón */
+  background-color: #000000;
+  color: #fff; /* Color de texto blanco */
+  border: none;
+  border-radius: 6px; /* Aumenta el radio de borde del botón */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4a29a3; /* Cambio de color al pasar el ratón */
+}
+
+p {
+  margin-top: 20px; /* Incrementa el margen superior del párrafo */
+  text-align: center;
+  color: #333; /* Color de texto gris oscuro */
+  font-size: 14px; /* Reduce el tamaño de fuente del párrafo */
+}
+
+p a {
+  color: #ffffff; /* Color de texto blanco */
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
