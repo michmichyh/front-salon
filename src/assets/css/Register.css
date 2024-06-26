@@ -1,12 +1,12 @@
 /* Register.css */
 
 .register-container {
-  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
   margin: 50px auto; /* Incrementa el margen superior para centrar más el formulario */
   padding: 30px; /* Reduce el padding para hacerlo más compacto */
   border-radius: 12px; /* Aumenta el radio de borde para esquinas más redondeadas */
   background-color: rgba(255, 255, 255, 0.8); /* Fondo con opacidad */
-  background-image: radial-gradient(circle, #82cbff, #dd74f5); /* Gradiente de colores */
+  background-image: radial-gradient(circle, #1f8fdf, #c243de); /* Gradiente de colores */
   display: flex;
   flex-direction: column;
   justify-content: center;

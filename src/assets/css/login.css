@@ -1,9 +1,9 @@
 /* Register.css */
 
 .login-container {
-  max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+  max-width: 400px; /* Ancho máximo del contenedor aumentado considerablemente */
   margin: 20vh auto; /* Centrado vertical ajustado */
-  padding: 20px;
+  padding: 40px; /* Aumenta el espacio interno */
   border: 1px solid #ccc;
   border-radius: 8px;
   background-image: radial-gradient(circle, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Gradiente de rojo y azul con opacidad */
@@ -22,12 +22,12 @@
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* Aumenta el espacio entre grupos de campos */
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: #fff; /* Color de texto blanco */
 }
 
@@ -35,7 +35,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
   border: 1px solid #bc69e8;
   border-radius: 4px;
@@ -52,7 +52,7 @@ input[type="password"]:focus {
 
 button[type="submit"] {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
   background-color: #007bff;
   color: #fff; /* Color de texto blanco */
@@ -67,7 +67,7 @@ button[type="submit"]:hover {
 }
 
 p {
-  margin-top: 10px;
+  margin-top: 20px; /* Aumenta el espacio superior */
   text-align: center;
   color: #fff; /* Color de texto blanco */
 }

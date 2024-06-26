@@ -1,0 +1,67 @@
+/* src/assets/css/Inicio.css */
+
+.Inicio-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding:60px;
+  text-align: center;
+  background: linear-gradient(135deg, #0a80e8, #c22372, #d63c89, #5454f3); /* Fondo con degradado de 4 colores */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: #fff; /* Color de texto blanco */
+}
+
+.Inicio-container h2 {
+  font-size: 2.5rem; /* Tamaño de letra más grande para el título */
+  color: #fff; /* Color del texto del título */
+  margin-bottom: 20px;
+}
+
+.Inicio-container p {
+  font-size: 1.4rem; /* Tamaño de letra más grande para la información */
+  color: #f0f0f0; /* Color del texto de la información */
+  line-height: 1.8; /* Espaciado entre líneas */
+}
+
+.agendamiento-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+select,
+input[type="datetime-local"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #006adc;
+}

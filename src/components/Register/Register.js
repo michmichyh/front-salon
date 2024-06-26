@@ -1,7 +1,8 @@
+// src/components/Register/Register.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from '../../Api/Axiosconfig'; // Importa la configuración de Axios
-import '../../assets/css/Register.css'; // Importar el archivo CSS para los estilos
+import '../../assets/css/Register.css'; // Ajustado el nombre del archivo CSS
 
 function Register() {
   const [nombre, setNombre] = useState('');
@@ -38,12 +39,12 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (password !== passwordConfirmation) {
-      alert('Passwords do not match');
+      alert('Las contraseñas no coinciden');
       return;
     }
 
     try {
-      const response = await axios.post('/Clientes', {
+      const response = await axios.post('/Cliente', {
         nombre: nombre,
         telefono: telefono,
         email: email,
@@ -52,19 +53,16 @@ function Register() {
         password_confirmation: passwordConfirmation,
       });
 
-      console.log('Client registered successfully:', response.data);
+      console.log('Cliente registrado correctamente:', response.data);
       // Aquí podrías redirigir a otra página o realizar acciones adicionales después del registro
     } catch (error) {
-      const errorMessage = error.response?.data ?? 'An unexpected error occurred';
-      console.error('Error registering client:', errorMessage);
-      // Aquí podrías mostrar el mensaje de error en la UI
-      alert(`Error registering client: ${JSON.stringify(errorMessage)}`);
+      console.error('Error registrando cliente:', error.response.data);
     }
   };
 
   return (
     <div className="register-container">
-      <h2>Register</h2>
+      <h2>Registro</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="nombre">Nombre</label>
@@ -105,7 +103,7 @@ function Register() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Contraseña</label>
           <input
             type="password"
             id="password"
@@ -115,7 +113,7 @@ function Register() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="passwordConfirmation">Confirm Password</label>
+          <label htmlFor="passwordConfirmation">Confirmar Contraseña</label>
           <input
             type="password"
             id="passwordConfirmation"
@@ -124,10 +122,10 @@ function Register() {
             required
           />
         </div>
-        <button type="submit">Register</button>
+        <button type="submit">Registrar</button>
       </form>
       <p>
-        Already have an account? <Link to="/login">Login here</Link>
+        ¿Ya tienes una cuenta? <Link to="/login">Inicia sesión aquí</Link>
       </p>
     </div>
   );
