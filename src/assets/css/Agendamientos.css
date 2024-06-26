@@ -1,0 +1,73 @@
+.agendamientos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #9968c4; /* Color de fondo */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agendamientos-list-container {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.agendamientos-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.agendamiento-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.agendamiento-item:hover {
+    transform: scale(1.02);
+}
+
+.mensaje-agendamiento {
+    background-color: #fce4ec;
+    border: 1px solid #f8bbd0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #c2185b;
+}
+
+.agendamientos-info {
+    font-size: 1.4rem; /* Tamaño de letra más grande */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.logout-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-logout {
+    background-color: #5d5af8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #247ad1;
+}

@@ -3,24 +3,24 @@
 .Inicio-container {
   max-width: 600px;
   margin: 0 auto;
-  padding:60px;
+  padding: 60px;
   text-align: center;
-  background: linear-gradient(135deg, #0a80e8, #c22372, #d63c89, #5454f3); /* Fondo con degradado de 4 colores */
+  background: linear-gradient(135deg, #0a80e8, #c22372, #d63c89, #5454f3);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  color: #fff; /* Color de texto blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
 .Inicio-container h2 {
-  font-size: 2.5rem; /* Tamaño de letra más grande para el título */
-  color: #fff; /* Color del texto del título */
+  font-size: 2.5rem;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .Inicio-container p {
-  font-size: 1.4rem; /* Tamaño de letra más grande para la información */
-  color: #f0f0f0; /* Color del texto de la información */
-  line-height: 1.8; /* Espaciado entre líneas */
+  font-size: 1.4rem;
+  color: #f0f0f0;
+  line-height: 1.8;
 }
 
 .agendamiento-form {
@@ -64,4 +64,27 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #006adc;
+}
+
+.info-mensaje {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  text-align: left;
+}
+
+.btn-agendamiento {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #383eac;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agendamiento:hover {
+  background-color: #773297;
 }
